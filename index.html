@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f783b5">
+  <meta name="description" content="A little Get Well Soon surprise for Nimra 💗">
+  <title>Get Well Soon, Nimra 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="confetti" class="confetti-layer" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="floating-heart f1">💗</div>
+    <div class="floating-heart f2">🌸</div>
+    <div class="floating-heart f3">✨</div>
+    <div class="floating-heart f4">🦋</div>
+
+    <div class="hero-card">
+      <div class="tiny-pill">A little something made just for you 💕</div>
+      <h1>Get Well Soon,<br><span>Nimra!</span> 🧸</h1>
+      <p class="subtitle">
+        May Allah make your sickness go away, give you complete <b>Shifa</b>,
+        and fill your days with happiness, smiles, and lots of energy.
+        Ameen. 🤲🏻💗
+      </p>
+      <button class="main-btn" id="surpriseBtn">Open your little surprise 🎁</button>
+      <div class="scroll-hint">↓ cute things are waiting below ↓</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <span>🌷</span>
+        <h2>Nimra's tiny care package</h2>
+        <span>🌷</span>
+      </div>
+
+      <p class="section-intro">Tap anything you want. Your imaginary delivery is completely free. 😌</p>
+
+      <div class="care-grid">
+        <button class="care-card" data-item="bandage">
+          <div class="big-emoji">🩹</div>
+          <h3>Magic Bandage</h3>
+          <p>Put it on! ✨</p>
+        </button>
+
+        <button class="care-card" data-item="teddy">
+          <div class="big-emoji">🧸</div>
+          <h3>Teddy Hug</h3>
+          <p>Maximum comfort 💗</p>
+        </button>
+
+        <button class="care-card" data-item="candy">
+          <div class="big-emoji">🍭</div>
+          <h3>Something Sweet</h3>
+          <p>A little happiness!</p>
+        </button>
+
+        <button class="care-card" data-item="chocolate">
+          <div class="big-emoji">🍫</div>
+          <h3>Chocolate</h3>
+          <p>Because obviously 😌</p>
+        </button>
+      </div>
+
+      <div id="itemMessage" class="item-message" aria-live="polite">
+        Pick something from your care package 💕
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="letter">
+        <div class="tape"></div>
+        <div class="letter-top">💌 A little note for you</div>
+        <h2>Dear Nimra,</h2>
+
+        <p>
+          Being sick is no fun, so this little corner of the internet is here
+          to remind you that you deserve all the kindness, cuddles, chocolates,
+          and happy thoughts in the world. 🌸
+        </p>
+
+        <p>
+          Take plenty of rest, be patient with yourself, and remember that
+          brighter days are coming. May Allah grant you
+          <b>Shifa-e-Kamilah</b>, make you feel better very soon, and keep you
+          smiling. Ameen. 🤲🏻
+        </p>
+
+        <p class="signature">
+          Now get better soon, okay? 💗<br>
+          — Someone who wishes you well 🌷
+        </p>
+      </div>
+    </section>
+
+    <section class="game-section">
+      <div class="game-card">
+        <div class="game-emoji">🌸</div>
+        <h2>Catch the happy hearts!</h2>
+        <p>
+          Tap the hearts before they disappear. Collect 10 to unlock a special
+          message just for you. 💕
+        </p>
+
+        <div class="score">
+          Hearts collected: <strong id="score">0</strong> / 10
+        </div>
+
+        <div id="heartGame" class="heart-game">
+          <div class="game-placeholder">Your hearts will appear here 💗</div>
+        </div>
+
+        <button class="small-btn" id="startGameBtn">
+          Start the happy-heart game 💕
+        </button>
+      </div>
+    </section>
+
+    <section class="wish-section">
+      <div class="wish-card">
+        <div class="moon">🌙</div>
+        <h2>A little dua for you</h2>
+        <p>
+          May Allah grant Nimra complete shifa, remove her discomfort,
+          strengthen her, and bring her back to feeling happy, healthy,
+          energetic, and full of smiles.
+        </p>
+        <div class="ameen">Ameen ya Rabb-ul-Alameen 🤲🏻💗</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with lots of good wishes for Nimra 💗
+  </footer>
+
+  <div id="surpriseModal" class="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="surprise-emoji">🎀🧸🎀</div>
+      <h2 id="surpriseTitle">Surprise for Nimra!</h2>
+      <p>Emergency delivery has arrived:</p>
+
+      <div class="delivery-list">
+        <span>🧸 1 giant teddy hug</span>
+        <span>🍫 unlimited imaginary chocolate</span>
+        <span>🍭 extra sweetness</span>
+        <span>🌸 1000 happy thoughts</span>
+        <span>🤲🏻 lots and lots of duas for shifa</span>
+      </div>
+
+      <p class="modal-final">Your only job: REST + GET BETTER 💗</p>
+      <button class="main-btn" id="okayBtn">Okayyy 💕</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
